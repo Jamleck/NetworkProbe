@@ -13,7 +13,6 @@ namespace NetworkProbe
         {
         }
 
-
         public NetworkProbeResult Probe()
         {
             string networkProbeCommand = "sudo arp-scan --localnet --plain";
@@ -22,7 +21,7 @@ namespace NetworkProbe
             {
                 var result = Bash(networkProbeCommand);
 
-				return Parse(result);
+                return Parse(result);
             }
             catch (Exception ex)
             {
@@ -72,7 +71,6 @@ namespace NetworkProbe
                 }
             }
 
-
             return devices;
         }
 
@@ -98,9 +96,5 @@ namespace NetworkProbe
 
             return result;
         }
-
-
     }
-
-
 }

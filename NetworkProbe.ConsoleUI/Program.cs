@@ -4,15 +4,14 @@ namespace NetworkProbe.ConsoleUI
 {
     class Program
     {
-
         static void Main(string[] args)
         {
-			var arcScan = new ArpScanNetworkProbe();
-			var result = arcScan.Probe();
+            var arcScan = new ArpScanNetworkProbe();
+            var result = arcScan.Probe();
 
-			Console.WriteLine(result);
+            Console.WriteLine(result);
 
-			Console.Read();
+            Console.Read();
         }
     }
 }
